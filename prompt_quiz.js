@@ -7,7 +7,8 @@
 		alert("Correct!");
 		var newscore = score+1;
 	} else {
-		alert("Sorry, the correct answer is brewed coffee.", " ").toLowerCase();
+		alert("Sorry, the correct answer is brewed coffee.", " ");
+		var newscore = score+0;
 	}
 
 	var answer2 = prompt("Which coffee roast contains more caffeine, dark roast or light roast?", " ").toLowerCase();
@@ -16,6 +17,7 @@
 		var newscore = newscore+1;
 	} else {
 		alert("Sorry, the correct answer is dark roast.");
+		var newscore = newscore+0;
 	}
 
 	var answer3 = prompt("Name one of the two most common types of coffee beans.", " ").toLowerCase();
@@ -24,6 +26,7 @@
 		var newscore = newscore+1;
 	} else {
 		alert("Sorry, the correct answer is Arabica or Robusta.");
+		var newscore = newscore+0;
 	}
 
 	var answer4 = prompt("Where is the only place to grow coffee in the US?", " ").toLowerCase();
@@ -32,6 +35,7 @@
 		var newscore = newscore+1;
 	} else {
 		alert("Sorry, the correct answer is Hawaii.");
+		var newscore = newscore+0;
 	}
 
 	var answer5 = prompt("What is the approximate average amount of coffee consumed per day (in cups)?", " ").toLowerCase();
@@ -40,8 +44,9 @@
 		var newscore = newscore+1;
 	} else {
 		alert("Sorry, the correct answer is 3 cups.");
+		var newscore = newscore+0;
 	}
 
-	var message = alert("You got " + newscore + " out of 5 correct");
+	var message = alert("You got " + newscore + " out of 5 correct.");
 
 })();
